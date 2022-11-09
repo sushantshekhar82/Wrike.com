@@ -1,10 +1,12 @@
 import React from 'react'
 import Card from './Card'
 import data from './data'
+import IndividualIntervalsExample from './IndividualIntervalsExample'
 function Home() {
     console.log(data)
   return (
     <>
+ <IndividualIntervalsExample/>
     <div className='text-center mt-3'>Category-Breakfast</div>
     <section className='py-4 container'>
         <div className='row justify-content-center'>

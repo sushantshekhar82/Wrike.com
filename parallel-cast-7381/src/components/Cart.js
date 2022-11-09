@@ -21,7 +21,7 @@ function Cart() {
     <section className='py-4 container'>
         <div className='row justify-content-center'>
             <div className='col-12'>
-           <h1>Cart:- {cartTotal} Total Items:{totalItems}</h1>
+           <h1> Total Items:{totalItems}</h1>
            <table className='table table-light table-hover m-0'>
            { items.map((item,index)=>{
            return(
