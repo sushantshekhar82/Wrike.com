@@ -8,18 +8,21 @@ import { Link } from 'react-router-dom'
 
 function NavScrollExample() {
   return (
-    <Navbar sticky="top" bg="light" expand="lg" style={{color:"yellow"}}>
-      <Container fluid>
-        <Link to="/">Grossmarket</Link>
+    <Navbar sticky="top" bg="light" expand="lg" >
+      <Container fluid >
+        
+        <Link to="/"><img src="https://github.com/sushantshekhar82/parallel-cast-7381/blob/fw19_0479_day1/parallel-cast-7381/Purple%20and%20Pink%20Logotype%20with%20Feather%20for%20Self%20Made%20Entrepreneur.png?raw=true" width="80px" alt='Grossmarket'/></Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px'}}
+            style={{ maxHeight: '100px',display:"flex" ,justifyContent:'right'}}
             navbarScroll
           >
-            <Link to="/">Home</Link>
-            <Link to="/cart">Cart</Link>
+           
+           
+            </Nav>
+
             {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -33,8 +36,8 @@ function NavScrollExample() {
             {/* <Nav.Link href="#" disabled>
               Link
             </Nav.Link> */}
-          </Nav>
-          <Form className="d-flex">
+        
+          {/* <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Search"
@@ -42,7 +45,8 @@ function NavScrollExample() {
               aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>
-          </Form>
+          </Form> */}
+           <Link to="/cart"><Button>Cart</Button></Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

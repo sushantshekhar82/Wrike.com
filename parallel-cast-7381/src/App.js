@@ -12,8 +12,21 @@ import {
   Route,
   Link
 } from "react-router-dom";
-
+import {useEffect, useState} from 'react'
 function App() {
+  const [items, setItems] = useState([]);
+  const [count,setCount]=useState(0)
+useEffect(() => {
+  const item = JSON.parse(localStorage.getItem('items'));
+ 
+   setItems(item);
+   if(item){
+    setCount(item.length)
+   }
+   
+}, []);
+console.log(count)
+
   return (
     <div className="App">
       <Router>
