@@ -19,7 +19,7 @@ function Home() {
       <Alert className='alert'  onClose={() => setShow1(false)} dismissible>
         <Alert.Heading >Meet Wrike Lightspeed: the most powerful work management platform that will put you light-years ahead of the competition.</Alert.Heading>
       
-      </Alert>
+      </Alert> 
       
       <div className='home'>
       <div>
