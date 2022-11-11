@@ -1,0 +1,147 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav{
+    background-color: #181f38;
+    color: white;
+  
+}
+.tablcontainer{
+    height:90vh;
+    width:150vh;
+    background-color: #181f38;
+    color:white;
+
+}
+.dropdown{
+    background-color: #181f38;
+    border: none;
+    transition:10s
+}
+.dropdown:hover{
+    background-color: #3e414e;
+}
+
+ul{
+    list-style: none;
+}
+.box{
+    display: grid;
+    grid-template-columns: 30px 300px;
+    gap:2;
+    width:300px;
+    height: 100px;
+    border-radius: 7px;
+    margin-top: 25px;
+   
+    color: white;
+}
+.box:hover{
+    background-color: #303547;
+}
+.right{
+    display: grid;
+   grid-template-rows: 30px 50px;
+    gap:2;
+}
+.dropdownbody{
+    height:90vh;
+    width:100%;
+    background-color: #181f38;
+    color:white;
+    display: grid;
+    grid-template-columns: 50vh 50vh 50vh;
+    gap:5;
+
+}
+.dropdownbody1{
+    height:90vh;
+    width:100%;
+    background-color: #181f38;
+    color:white;
+    display: grid;
+    grid-template-columns: 30% 32% 33%;
+    gap:5;
+    margin-left: 0px;
+}
+strong{
+    font-size: 12px;
+}
+.head{
+    color: #6f7175;
+    font-size: 18px;
+    font-weight:bold;
+    margin-top: 10px;
+   margin-left: 30px;
+}
+
+.tabs{
+    color: white ;
+}
+.navright{
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    align-items: center;
+}
+.home{
+    background-color: #181f38;
+    width: 100%;
+    display: grid;
+    grid-template-columns:40% 60% ;
+    color: white;
+}
+.h1{
+    font-size: 60px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.h4{
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.btn1{
+    background-color: #08Cf65;
+    border: none;
+}
+.emailinput{
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+
+}
+.btn2{
+    background-color: #08Cf65;
+    border: none;
+    width: 170px;
+    height: 57px;
+    border-radius: 10px;
+    margin-left: 2px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.video{
+    color: #08Cf65;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 0;
+    cursor: pointer;
+}
+.imggroup{
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    margin: auto;
+    margin-top: 10px;
+}
+.imggroup>img{
+    width: auto;
+    height: 45px;
+}
