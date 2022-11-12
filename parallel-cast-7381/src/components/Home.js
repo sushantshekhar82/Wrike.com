@@ -2,11 +2,12 @@ import React from 'react';
 import "./Index.css";
 import { Center, grid, Heading } from '@chakra-ui/react';
 import { Input } from '@chakra-ui/react';
-import { Button, ButtonGroup } from '@chakra-ui/react';
+import { Button, ButtonGroup,Box } from '@chakra-ui/react';
 import  { useState } from 'react';
 import Alert from 'react-bootstrap/Alert';
 import Modal from 'react-bootstrap/Modal';
 import Ratio from 'react-bootstrap/Ratio';
+import Footer from './Footer';
 function Home() {
   const [show, setShow] = useState(false);
 
@@ -57,9 +58,7 @@ Anything is possible with the most powerful work management software at your fin
      
     </Modal>
 
-   <span className='imggroup'><img src='https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-google.svg'/><img src='https://web-static.wrike.com/tp/storage/uploads/17e81db2-0802-47a7-8037-8cb11d166299/1440-logoroll-logo-syneos.svg'/><img src='https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-lyft.svg'/>
-   <img src='https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-siemens.svg'/><img src='https://web-static.wrike.com/tp/storage/uploads/473c0f49-59e8-4422-89d7-184c44f362cf/1440-logoroll-logo-nickelodeon.svg'/><img src='https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-oglivy.svg'/><img src='https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-snowflake.svg'/></span>
-
+  
    </>
     );
   }else{
@@ -104,11 +103,44 @@ Anything is possible with the most powerful work management software at your fin
         </Modal.Body>
        
       </Modal>
-
+  <div style={{height:'1200px'}}>
      <span className='imggroup'><img src='https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-google.svg'/><img src='https://web-static.wrike.com/tp/storage/uploads/17e81db2-0802-47a7-8037-8cb11d166299/1440-logoroll-logo-syneos.svg'/><img src='https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-lyft.svg'/>
      <img src='https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-siemens.svg'/><img src='https://web-static.wrike.com/tp/storage/uploads/473c0f49-59e8-4422-89d7-184c44f362cf/1440-logoroll-logo-nickelodeon.svg'/><img src='https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-oglivy.svg'/><img src='https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-snowflake.svg'/></span>
-
     
+         <p className='p1'>TRUSTED BY 20,000+ ORGANIZATIONS WORLDWIDE</p>
+         <h3>Transform the way your teams work</h3>
+         <p>Empower your teams to do the best work of their lives with 360° visibility, true cross-departmental collaboration, and powerful automation.</p>
+   
+      <div className='card'>
+        <div>
+          <div><img src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=240,dpr=1/tp/storage/uploads/f12bf685-64af-4413-a42e-80e58ed088ee/evo-icp-hp-ps-light.png" alt=""/></div>
+          <div><h2>Professional Services</h2></div>
+          <div><p className='txt'>Take the service delivery to the next level with Wrikes powerful platform.Manage resources, track billable hours and make informed descision with ease</p>
+          <p className='txt'>Learn More <span className='arrow'></span></p></div>
+         
+        
+           </div>
+        <div><div><img src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=240,dpr=1/tp/storage/uploads/8b283fef-6bd1-4513-8398-228095b64833/evo-icp-hp-marketing-light.png" alt=""/></div>
+          <div><h2>Marketing</h2></div>
+          <div><p className='txt'>Take the service delivery to the next level with Wrikes powerful platform.Manage resources, track billable hours and make informed descision with ease</p>
+          <p className='txt'>Learn More</p></div>
+         </div>
+        <div><div><img src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=240,dpr=1/tp/storage/uploads/4486fa19-a0c3-4f16-8d12-60ddfefec7c8/evo-icp-hp-pm-light.png" alt=""/></div>
+          <div><h2>Project Management</h2></div>
+          <div><p className='txt'>Take the service delivery to the next level with Wrikes powerful platform.Manage resources, track billable hours and make informed descision with ease</p>
+          <p className='txt'>Learn More</p></div>
+         </div>
+        <div><div><img src="https://web-static.wrike.com/cdn-cgi/image/format=auto,quality=80,width=240,dpr=1/tp/storage/uploads/0eadfaae-5c62-44fe-a375-cfdaab468ac0/evo-icp-hp-it-light.png" alt=""/></div>
+          <div><h2>IT</h2></div>
+          <div><p className='txt'>Take the service delivery to the next level with Wrikes powerful platform.Manage resources, track billable hours and make informed descision with ease</p>
+          <p className='txt'>Learn More</p></div>
+         </div>
+        
+     </div>
+     </div>
+     <Footer/>
+     
+      
     </>
   )
   }
