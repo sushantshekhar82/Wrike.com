@@ -4,6 +4,7 @@
 .nav{
     background-color: #181f38;
     color: white;
+    cursor: pointer;
   
 }
 .tablcontainer{
@@ -318,5 +319,56 @@ strong{
 .imghome{
     width: 100px;
     height: 30px;
+}
+.dashboard{
+    display: grid;
+    grid-template-columns: 30% 50% 20% ;
+   
+     height: 85vh;   
+    margin: 15px;
+    gap:25;
+  
+   
+   
+
+
+}
+.dashboard>div{
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5px;
+}
+.dashboardbody{
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    row-gap: 10;
+}
+.dashboardbody>div{
+  
+    text-align: left;
+    padding: 10px;
+}
+.flexbody{
+   
+    display: flex;
+}
+.flexbody>div{
+    width: 100px;
+    height: 100px;
+
+}
+.flexbody>div:hover{
+    background-color: skyblue;
+    border-radius:15px
+   
+}
+.body2>div{
+    width: 400px;
+    height: 100px;
+}
+.body2>div:hover{
+    background-color: skyblue;
+    border-radius:15px
+   
 }
 

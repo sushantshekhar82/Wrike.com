@@ -9,8 +9,9 @@ import Modal from 'react-bootstrap/Modal';
 import Ratio from 'react-bootstrap/Ratio';
 import Footer from './Footer';
 import { useEffect } from 'react';
-import {ArrowRight } from 'react-feather'
+import {ArrowRight,PlayCircle } from 'react-feather'
 import { ArrowRightIcon } from '@chakra-ui/icons';
+import {Link} from 'react-router-dom'
 function Home() {
   const [show, setShow] = useState(false);
   
@@ -36,8 +37,8 @@ Anything is possible with the most powerful work management software at your fin
 </Heading>
 <Input className='emailinput' type='email' placeholder='Enter your business Email'  />  
 
-<Button className="btn2">Get Started<ArrowRight/></Button>
-<p className='video' onClick={handleShow}>Explore our new platform<ArrowRight/></p>
+<Link to="/login"><Button className="btn2">Get Started<ArrowRight/></Button></Link>
+<p className='video' onClick={handleShow}><PlayCircle/>Explore our new platform<ArrowRight/></p>
 
   
       </div>
