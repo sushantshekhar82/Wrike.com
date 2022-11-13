@@ -303,4 +303,20 @@ strong{
     width: 300px;
     height: 150px;
 }
+.white{
+    background-color: white;
+}
+.homegrid{
+    display: grid;
+    width: 100%;
+   grid-template-columns: 33% 33% 33%;
+
+    justify-content:space-between;
+    align-items: center;
+
+}
+.imghome{
+    width: 100px;
+    height: 30px;
+}
 

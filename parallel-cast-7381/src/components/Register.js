@@ -7,6 +7,7 @@ import { Input,InputGroup,InputRightElement } from '@chakra-ui/react';
 import { useRef } from 'react';
 import Home from './Home';
 import Login from './Login';
+import { useNavigate } from 'react-router-dom';
 function Register(props) {
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
@@ -14,7 +15,8 @@ function Register(props) {
 //   const[password,setPassword]=useState("")
       const name=useRef()
      const email=useRef()
-     const password=useRef()
+     const password=useRef();
+     const navigate=useNavigate()
   const[showHome,setShowHome]=useState(false);
 const localStoragesignup=localStorage.getItem('signup')
   useEffect(()=>{
@@ -27,7 +29,7 @@ const localStoragesignup=localStorage.getItem('signup')
             localStorage.setItem('email',email.current.value);
             localStorage.setItem('password',password.current.value);
             localStorage.setItem('signup',email.current.value);
-            window.location.reload()
+           window.location.reload()
 
         }else{
             alert("please fill all fields")

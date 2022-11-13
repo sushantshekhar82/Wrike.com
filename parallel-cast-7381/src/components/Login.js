@@ -3,7 +3,7 @@ import Footer from './Footer';
 import "./Index.css";
 import { Button,ButtonGroup,Box } from '@chakra-ui/react';
 import { Input,InputGroup,InputRightElement } from '@chakra-ui/react';
-import {Link, Navigate } from 'react-router-dom';
+import {Link, Navigate, useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import Home from './Home';
 function Login(props) {
@@ -15,11 +15,14 @@ function Login(props) {
      const [showHome,setShowHome]=useState(false)
 const localStorageemail=localStorage.getItem('email');
 const localStoragepass=localStorage.getItem('password');
+const navigate=useNavigate()
 const handleSubmit=()=>{
     if(email.current.value&&password.current.value){
         if(email.current.value===localStorageemail && password.current.value===localStoragepass){
          localStorage.setItem('signin',"true")
-         window.location.reload()
+      
+        navigate('/');
+        window.location.reload()
         }else{
             alert('No account found')
         }
