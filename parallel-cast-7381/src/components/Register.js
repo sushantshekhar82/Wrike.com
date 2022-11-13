@@ -5,6 +5,8 @@ import "./Index.css";
 import { Button,ButtonGroup,Box } from '@chakra-ui/react';
 import { Input,InputGroup,InputRightElement } from '@chakra-ui/react';
 import { useRef } from 'react';
+import Home from './Home';
+import Login from './Login';
 function Register(props) {
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
@@ -13,6 +15,25 @@ function Register(props) {
       const name=useRef()
      const email=useRef()
      const password=useRef()
+  const[showHome,setShowHome]=useState(false);
+const localStoragesignup=localStorage.getItem('signup')
+  useEffect(()=>{
+    if(localStoragesignup)
+    setShowHome(true)
+  },[])
+     const handleSubmit=()=>{
+        if(name.current.value&&email.current.value&&password.current.value){
+            localStorage.setItem('name',name.current.value);
+            localStorage.setItem('email',email.current.value);
+            localStorage.setItem('password',password.current.value);
+            localStorage.setItem('signup',email.current.value);
+            window.location.reload()
+
+        }else{
+            alert("please fill all fields")
+        }
+       
+     }
     const handleChange=(e)=>{
         
       
@@ -22,6 +43,7 @@ function Register(props) {
       
     },[])
   return (
+    (showHome ? <Login/>:
     <div style={{backgroundColor:"#e7e0e0",width:"100%",height:"90vh",paddingTop:"40px"}}>
     <div className="login">
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Wrike_logo_2020.png" alt="wrike"/>
@@ -47,7 +69,7 @@ function Register(props) {
       </InputRightElement>
     </InputGroup>
     </span>
-     <Button className="btn2">Get Started</Button>
+     <Button className="btn2" onClick={handleSubmit}>Get Started</Button>
     
      <p>Forgot password?</p>
      <p> or Login with</p>
@@ -57,8 +79,9 @@ function Register(props) {
      <p style={{marginTop:"5px"}}>Already have an account<buttton className='passbtn' onClick={ () =>props.onChange('login')}>Login here</buttton> </p> 
 
     </div>
- </div>
   
+ </div>
+   )
   )
 }
 

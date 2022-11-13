@@ -4,26 +4,47 @@ import "./Index.css";
 import { Button,ButtonGroup,Box } from '@chakra-ui/react';
 import { Input,InputGroup,InputRightElement } from '@chakra-ui/react';
 import {Link, Navigate } from 'react-router-dom';
+import { useRef } from 'react';
+import Home from './Home';
 function Login(props) {
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
-  const[email,setEmail]=useState("")
-  const[password,setPassword]=useState("")
-
+     const email=useRef();
+     const password=useRef()
+     const signin=localStorage.getItem('signin');
+     const [showHome,setShowHome]=useState(false)
+const localStorageemail=localStorage.getItem('email');
+const localStoragepass=localStorage.getItem('password');
+const handleSubmit=()=>{
+    if(email.current.value&&password.current.value){
+        if(email.current.value===localStorageemail && password.current.value===localStoragepass){
+         localStorage.setItem('signin',"true")
+         window.location.reload()
+        }else{
+            alert('No account found')
+        }
+    }else{
+        alert("please fill all fields")
+    }
+   
+ }
     const handleChange=(e)=>{
         
       
        
     }
     useEffect(()=>{
-      
+      if(signin){
+        setShowHome(true)
+      }
     },[])
   return (
+    (showHome?<Home/>:
  <div style={{backgroundColor:"#e7e0e0",width:"100%",height:"90vh",paddingTop:"40px"}}>
     <div className="login">
       
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Wrike_logo_2020.png" alt="wrike"/>
-    <Input className='emailinput' type='email' onChange={handleChange} placeholder='Enter your business Email'  />  
+    <Input className='emailinput' type='email' onChange={handleChange} placeholder='Enter your business Email' ref={email}  />  
 
  
 
@@ -35,6 +56,7 @@ function Login(props) {
       className="password"
         type={show ? 'text' : 'password'}
         placeholder='Enter password'
+        ref={password}
       />
       <InputRightElement width='4.5rem'>
        <span className='btnflex'> <Button className='passbtn'   onClick={handleClick}>
@@ -43,7 +65,7 @@ function Login(props) {
       </InputRightElement>
     </InputGroup>
     </span>
-     <Button className="btn2">Get Started</Button>
+     <Button className="btn2" onClick={handleSubmit}>Get Started</Button>
    
      <p>Forgot password?</p>
      <p> or Login with</p>
@@ -56,7 +78,7 @@ function Login(props) {
  
   
 </div>
-    
+ )   
   )
 }
 

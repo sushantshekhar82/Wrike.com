@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom'
-
+import { useState,useEffect } from 'react';
 import {ChevronDownIcon} from '@chakra-ui/icons'
 import "./Index.css";
 
@@ -13,6 +13,19 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 function NavScrollExample() {
+  const[showLogout,setShowLogout]=useState(false)
+  let signin=localStorage.getItem('signin')
+  let name=localStorage.getItem('name')
+  useEffect(()=>{
+ if(signin){
+  setShowLogout(true);
+ }
+  },[]);
+
+  const handleLogout=()=>{
+    localStorage.removeItem('signin');
+    window.location.reload()
+  }
   return (
     <Navbar className='nav' sticky="top"  expand="lg" >
       <Container fluid >
@@ -315,8 +328,9 @@ function NavScrollExample() {
             <Button variant="outline-success">Search</Button>
           </Form> */}
           <span className='navright'> <b>Contact Sales</b> 
-          <b ><Link style={{textDecoration:"none",color:"white"}} to="/login">Login</Link></b>
-          <Link to="/login"> <Button className="btn1"><strong>Start For Free</strong></Button></Link></span>
+          {showLogout?<b>{name}</b>:<b ><Link style={{textDecoration:"none",color:"white"}} to="/login">Login</Link></b>}
+          {showLogout?<Button onClick={handleLogout}>Logout</Button>:<Link to="/login"> <Button className="btn1"><strong>Start For Free</strong></Button></Link>}
+          </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>

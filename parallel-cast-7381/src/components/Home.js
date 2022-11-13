@@ -8,12 +8,14 @@ import Alert from 'react-bootstrap/Alert';
 import Modal from 'react-bootstrap/Modal';
 import Ratio from 'react-bootstrap/Ratio';
 import Footer from './Footer';
+import { useEffect } from 'react';
 function Home() {
   const [show, setShow] = useState(false);
-
+  
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [show1, setShow1] = useState(true);
+ 
   if (show1) {
     return (
       <>
