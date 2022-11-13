@@ -112,6 +112,8 @@ strong{
     width: 300px;
     height: 60px;
     border-radius: 10px;
+    border: 1px solid gray;
+    
 
 }
 .btn2{
@@ -259,5 +261,46 @@ strong{
     width: 10px;
     height: 10px;
     margin-left: 10px;
+
+}
+.login{
+    width: 400px;
+    height: 600px;
+ 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   border-radius: 15px;
+    margin-top: 40px;
+    background-color: #ffffff;
+    margin: auto;
+    
+   
+    
+}
+.login>input{
+  margin: auto;
+  margin-top: 10px;
+
+
+}.login>button{
+    margin: auto;
+}
+.password{
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+  
+}
+.passbtn{
+    margin-top: 15px;
+    background-color: #08Cf65;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login>img{
+    width: 300px;
+    height: 150px;
 }
 

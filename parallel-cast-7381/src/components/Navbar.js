@@ -315,8 +315,8 @@ function NavScrollExample() {
             <Button variant="outline-success">Search</Button>
           </Form> */}
           <span className='navright'> <b>Contact Sales</b> 
-          <b>Log in</b>
-          <Link to="/"> <Button className="btn1"><strong>Start For Free</strong></Button></Link></span>
+          <b ><Link style={{textDecoration:"none",color:"white"}} to="/login">Login</Link></b>
+          <Link to="/login"> <Button className="btn1"><strong>Start For Free</strong></Button></Link></span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
