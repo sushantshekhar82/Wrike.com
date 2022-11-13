@@ -1,0 +1,374 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav{
+    background-color: #181f38;
+    color: white;
+    cursor: pointer;
+  
+}
+.tablcontainer{
+    height:90vh;
+    width:150vh;
+    background-color: #181f38;
+    color:white;
+
+}
+.dropdown{
+    background-color: #181f38;
+    border: none;
+    transition:10s
+}
+.dropdown:hover{
+    background-color: #3e414e;
+}
+
+ul{
+    list-style: none;
+}
+.box{
+    display: grid;
+    grid-template-columns: 30px 300px;
+    gap:2;
+    width:300px;
+    height: 100px;
+    border-radius: 7px;
+    margin-top: 25px;
+   
+    color: white;
+}
+.box:hover{
+    background-color: #303547;
+}
+.right{
+    display: grid;
+   grid-template-rows: 30px 50px;
+    gap:2;
+}
+.dropdownbody{
+    height:90vh;
+    width:100%;
+    background-color: #181f38;
+    color:white;
+    display: grid;
+    grid-template-columns: 50vh 50vh 50vh;
+    gap:5;
+
+}
+.dropdownbody1{
+    height:90vh;
+    width:100%;
+    background-color: #181f38;
+    color:white;
+    display: grid;
+    grid-template-columns: 30% 32% 33%;
+    gap:5;
+    margin-left: 0px;
+}
+strong{
+    font-size: 12px;
+}
+.head{
+    color: #6f7175;
+    font-size: 18px;
+    font-weight:bold;
+    margin-top: 10px;
+   margin-left: 30px;
+}
+
+.tabs{
+    color: white ;
+}
+.navright{
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    align-items: center;
+}
+.home{
+    background-color: #181f38;
+    width: 100%;
+    display: grid;
+    grid-template-columns:40% 60% ;
+    color: white;
+}
+.h1{
+    font-size: 60px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.h4{
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.btn1{
+    background-color: #08Cf65;
+    border: none;
+}
+.emailinput{
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    
+
+}
+.btn2{
+    background-color: #08Cf65;
+    border: none;
+    width: 170px;
+    height: 57px;
+    border-radius: 10px;
+    margin-left: 2px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.video{
+    color: #08Cf65;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 0;
+    cursor: pointer;
+}
+.imggroup{
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    margin: auto;
+    margin-top: 10px;
+}
+.imggroup>img{
+    width: auto;
+    height: 45px;
+}
+.alert{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p1{
+    color: gray;
+    font-size: 14px;
+    font-weight: bold;
+}
+.p1+h3{
+    font-size: 35px;
+    font-weight: bold;
+}
+.p1+h3+p{
+    font-size: 15px;
+    width: 600px;
+    font-weight: bold;
+    color: gray;
+    margin:auto;
+}
+.card{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    height: 300px;
+   justify-content: space-around;
+   align-items: center;
+    gap: 10;
+    margin-top: 10px;
+    border: none;
+
+   
+}.card>div{
+   display: grid;
+   grid-template-columns: 400px;
+   grid-template-rows: 200px  50px 200px;
+   border-radius: 15px;
+   text-align: justify;
+  
+
+}
+.card>div:hover{
+    background-color: #303547;
+    color: white;
+
+}
+.card>div>div{
+    margin-top: 5px;
+    margin: 4px 4px 4px 4px ;
+}
+.txt{
+    font-size: 20px;
+}
+
+.arrow {
+  content: "\2192";
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    gap:5px;
+    background-color: #0c3245;
+    height: 600px;
+    color:white;
+    text-align: justify;
+    justify-content: space-around;
+
+    
+   
+
+}
+.footer>div{
+    
+    margin-top: 25px;
+    margin-left: 40px;
+
+}
+.footer1{
+    display: grid;
+    grid-template-columns: 300px 300px 600px;
+    gap:5px;
+    background-color:#0c3245;
+ 
+    color:white;
+    text-align: justify;
+    justify-content: center;
+   margin-top: 1px;
+
+}
+
+
+.footer2{
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    justify-content: space-around;
+    gap:5px;
+    background-color:#0c3245;
+  margin-top: 10px;
+    color:white;
+
+
+}
+.footer2>div>img{
+    width: 150px;
+    height: 60px;
+    margin-left: 10px;
+}
+.img1{
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+
+}
+.login{
+    width: 400px;
+    height: 600px;
+ 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   border-radius: 15px;
+    margin-top: 40px;
+    background-color: #ffffff;
+    margin: auto;
+    
+   
+    
+}
+.login>input{
+  margin: auto;
+  margin-top: 10px;
+
+
+}.login>button{
+    margin: auto;
+}
+.password{
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+  
+}
+.passbtn{
+    margin-top: 15px;
+    background-color: #08Cf65;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login>img{
+    width: 300px;
+    height: 150px;
+}
+.white{
+    background-color: white;
+}
+.homegrid{
+    display: grid;
+    width: 100%;
+   grid-template-columns: 33% 33% 33%;
+
+    justify-content:space-between;
+    align-items: center;
+
+}
+.imghome{
+    width: 100px;
+    height: 30px;
+}
+.dashboard{
+    display: grid;
+    grid-template-columns: 30% 50% 20% ;
+   
+     height: 85vh;   
+    margin: 15px;
+    gap:25;
+  
+   
+   
+
+
+}
+.dashboard>div{
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5px;
+}
+.dashboardbody{
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    row-gap: 10;
+}
+.dashboardbody>div{
+  
+    text-align: left;
+    padding: 10px;
+}
+.flexbody{
+   
+    display: flex;
+}
+.flexbody>div{
+    width: 100px;
+    height: 100px;
+
+}
+.flexbody>div:hover{
+    background-color: skyblue;
+    border-radius:15px
+   
+}
+.body2>div{
+    width: 400px;
+    height: 100px;
+}
+.body2>div:hover{
+    background-color: skyblue;
+    border-radius:15px
+   
+}
+
