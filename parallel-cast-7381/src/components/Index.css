@@ -92,6 +92,22 @@ strong{
     grid-template-columns:40% 60% ;
     color: white;
 }
+.home1{
+    background-color: #181f38;
+    width: 100%;
+    display: grid;
+    grid-template-columns:40% 60% ;
+    color: white;
+   
+    align-items: center;
+
+}
+.home1img{
+    height: 800px;
+}
+.deconone{
+    text-decoration: none;
+}
 .h1{
     font-size: 60px;
     text-align: justify;
@@ -197,6 +213,37 @@ strong{
 
 }
 .card>div>div{
+    margin-top: 5px;
+    margin: 4px 4px 4px 4px ;
+}
+.card1{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  
+   justify-content: space-around;
+   align-items: center;
+    gap: 10;
+    margin-top: 10px;
+    border: none;
+
+   
+}.card1>div{
+   display: grid;
+   grid-template-columns: 400px;
+   grid-template-rows: 100px 200px;
+   border-radius: 15px;
+   text-align: justify;
+   
+  
+  
+
+}
+.card1>div:hover{
+    background-color: #303547;
+    color: white;
+
+}
+.card1>div>div{
     margin-top: 5px;
     margin: 4px 4px 4px 4px ;
 }

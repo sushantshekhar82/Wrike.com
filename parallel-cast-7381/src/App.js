@@ -28,8 +28,11 @@ function App() {
   setShowHome(true)
  }
   },[])
+
   return (
+   
     <div className="App">
+    
      { showHome ?<Dashboard/>:
 
       <Router>
