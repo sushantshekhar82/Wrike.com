@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Wrike.com
+Wrike is the most powerful work management software at your fingertips. It provides multiple features to manage your work and complete in fixed time span by using this web based software. Teck Stack use: React, JSON Server, JavaScript , Chakra UI and Bootstrap
+<h3>Home page</h3>
+<img src="https://user-images.githubusercontent.com/105901300/213787108-b7b33276-0db2-4594-9bdd-352bdf07d5b5.png" alt="wrike"/>
+<h3>Modal used in Home page</h3>
+<img src="https://user-images.githubusercontent.com/105901300/213787346-a8ba04a1-046f-44e7-b8ff-a596910ec736.png" alt="wrike"/>
+<h3>Navbar options</h3>
+<img src="https://user-images.githubusercontent.com/105901300/213787699-6cefd760-efbe-4c63-bde5-7d5deabc76ce.png" alt="wrike"/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3>Landing page</h3>
+<img src="https://user-images.githubusercontent.com/105901300/213787546-6fcab467-1a5a-414e-949a-34921cdce4f1.png" alt="wrike"/>
+<h3>Register Page</h3>
+<img src="https://user-images.githubusercontent.com/105901300/213788052-471ecf15-32f2-4f9b-abd9-7f8b4fe11f4a.png" alt="wrike"/>
 
-## Available Scripts
+<h3>Login page</h3>
+<img src="https://user-images.githubusercontent.com/105901300/213787810-c75cacd4-f2c3-480b-9b85-62f78e1f1562.png" alt="wrike"/>
 
-In the project directory, you can run:
+<h3>Dashboard page</h3>
+<img src="https://user-images.githubusercontent.com/105901300/213788270-da6def27-1b3f-4992-b7ef-92eda887e01e.png" alt="wrike"/>
 
-### `npm start`
+<h3>Todo area</h3>
+ <img src="https://user-images.githubusercontent.com/105901300/213788377-a97a492b-5cdf-46ca-9a80-7488fd80088e.png" alt="wrike"/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
